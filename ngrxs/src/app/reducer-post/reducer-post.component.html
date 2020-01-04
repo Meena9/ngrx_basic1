@@ -1,0 +1,22 @@
+
+<h2> reducer</h2>
+
+<div *ngIf="post|async as p">
+{{p}}
+    <h2>{{p.text}}</h2>
+    <h4>vatoes:{{p.likes}}</h4>
+   <div><button (click)="upvotePost()">Upvote</button></div> 
+    <div>
+   <button (click)="downVotePost()">downVote</button>
+</div>
+       <div>
+       
+           <button (click)="resetPost()">reset</button>
+       </div>
+<div>
+    <!-- <input [(ngModel)]="text" name="text"> -->
+</div>
+<div>
+    <button (click)="editText()">editText</button>
+</div>
+</div>
